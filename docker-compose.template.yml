@@ -71,7 +71,7 @@ services:
   nginx:
     image: nginx:latest
     ports:
-      - "80:9000"
+      - "8080:9000"
     volumes:
       - ./config/nginx/nginx.{{environment}}.conf:/etc/nginx/nginx.conf
       - ./config/nginx/smtp-proxy-htpasswd:/etc/nginx/htpasswd

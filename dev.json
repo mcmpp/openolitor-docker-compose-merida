@@ -1,35 +1,34 @@
-{
-    "env":"dev",
+ {
+    "env":"prod",
     "release_adminportal":"2.4.0",
     "release_kundenportal":"2.4.0",
     "release_server":"latest",
-    "domain":"openolitor.ch",
-    "frontendAirbreakApiKey": "[errbit_api_key]",
-    "backendAirbreakApiKey": "[errbit_api_key]",
-    "airbreakUrl":"https://errbit.host/",
-    "airbreakUrlShort": "errbit.host",
-    "smtpProxy": true,
-    "exposeSmtpProxy": true,
+    "domain":"qui.guifi.net",
+    "frontendAirbreakApiKey": "",
+    "backendAirbreakApiKey": "",
+    "airbreakUrl":"",
+    "airbreakUrlShort": "",
+    "smtpProxy": false,
+    "exposeSmtpProxy": false,
     "exposePdfTool": true,
     "s3": {
           "accessKey": "openolitor",
             "endpoint": "s3:9000",
-            "secret": "uGuRR53g4uR6c8R4yCxfNwFF"
+            "secret": "EligeUnaContraseña"
     },
     "db": {
-            "databaseRootPassword": "AaFpqD6uCY5F",
-            "memLimit": "300m"
+            "databaseRootPassword": "EligeUnaContraseña"
     },
     "csas": [{
-        "name": "csa1",
+        "name": "merida1",
         "buchhaltung": {
-            "referenznummer": "123456",
-            "teilnehmernummer": "333333"
+            "referenznummer": "",
+            "teilnehmernummer": ""
         },
         "db": {
-            "databaseUser": "user_csa1",
-            "databasePassword": "ebAwP4c65dqW",
-            "databaseName": "csa1"
+            "databaseUser": "user_merida1",
+            "databasePassword": "EligeUnaContraseña",
+            "databaseName": "merida1"
         },
         "pdfCreator": {
             "endpoint": "http://pdf-tool:8080/lool/convert-to/pdf"
@@ -38,16 +37,17 @@
           "secondFactorAuth": "false"
         },
         "smtp": {
-            "bcc": "no-reply@openolitor.ch",
-            "endpoint": "smtp-proxy",
-            "from": "no-reply@openolitor.ch",
+            "bcc": "no-reply@merida1.com",
+            "endpoint": "merida1.com",
+            "from": "no-reply@merida1.com",
             "maxChunkSize": "1m",
             "numberOfRetries": "3",
-            "password": "1234",
+            "password": "EligeUnaContraseña",
             "port": "1025",
             "security": "STARTTLS",
             "sendEmail": "false",
-            "user": "no-reply@openolitor.ch"
+            "user": "no-reply@merida1.com"
         }
-    }]
+    } ]
 }
+

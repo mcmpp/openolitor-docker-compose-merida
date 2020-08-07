@@ -14,8 +14,8 @@ function getConfig() {
   {% endfor %}
 
   return {
-    "API_URL": "https://" + fullHostname + "/api-" + instance + "/",
-    "API_WS_URL": "https://" + fullHostname + "/api-" + instance + "/ws",
+    "API_URL": "http://" + fullHostname + ":8080/api-" + instance + "/",
+    "API_WS_URL": "http://" + fullHostname + ":8080/api-" + instance + "/ws",
     "ENV": env,
     "version": "{{release_kundenportal}}",
     "AIRBREAK_API_KEY": "{{frontendAirbreakApiKey}}",
